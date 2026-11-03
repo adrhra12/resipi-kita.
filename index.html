@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resipi Kita</title>
+
+    <style>
+
+        body {
+            background-color: #FFF8EF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #594334;
+        }
+
+        header {
+            background-color: #76513D;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 5px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .search-box {
+            background-color: #F0E4D7;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input {
+            padding: 12px;
+            width: 65%;
+            border: 1px solid #D9B99B;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 12px 18px;
+            background-color: #76513D;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A87959;
+        }
+
+        h2 {
+            color: #76513D;
+            border-bottom: 2px solid #D9B99B;
+            padding-bottom: 10px;
+            margin-top: 35px;
+        }
+
+        details {
+            background-color: white;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 12px;
+            border: 1px solid #E8D6C5;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #8B6045;
+            font-size: 17px;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        .empty {
+            text-align: center;
+            color: #A87959;
+        }
+
+        footer {
+            background-color: #76513D;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍰 RESIPI KITA</h1>
+    <p>Resipi mudah, sedap dan istimewa untuk semua!</p>
+</header>
+
+<div class="container">
+
+    <div class="search-box">
+        <h2>Cari Resipi Anda</h2>
+
+        <input type="text" id="search"
+        placeholder="Taip nama makanan..."
+        oninput="searchRecipe()">
+
+        <button onclick="searchRecipe()">Cari</button>
+    </div>
+
+
+    <!-- RESIPI TRADISIONAL -->
+
+    <section class="category">
+
+        <h2>🍛 Resipi Tradisional</h2>
+
+        <details class="recipe">
+            <summary>Nasi Lemak</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Beras</li>
+                <li>Santan</li>
+                <li>Daun pandan</li>
+                <li>Garam</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Masak nasi bersama santan,
+            daun pandan dan garam sehingga masak.</p>
+        </details>
+
+        <details class="recipe">
+            <summary>Rendang Ayam</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Ayam</li>
+                <li>Santan</li>
+                <li>Serai</li>
+                <li>Rempah rendang</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Masak ayam bersama bahan-bahan
+            sehingga empuk dan kuah pekat.</p>
+        </details>
+
+        <details class="recipe">
+            <summary>Laksa Sarawak</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Bihun</li>
+                <li>Pes laksa Sarawak</li>
+                <li>Santan</li>
+                <li>Udang</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Sediakan kuah laksa dan hidangkan
+            bersama bihun serta bahan tambahan.</p>
+        </details>
+
+    </section>
+
+
+    <!-- PENCUCI MULUT -->
+
+    <section class="category">
+
+        <h2>🍰 Pencuci Mulut</h2>
+
+        <details class="recipe">
+            <summary>Kek Coklat</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Tepung gandum</li>
+                <li>Serbuk koko</li>
+                <li>Gula</li>
+                <li>Telur</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Campurkan bahan dan bakar
+            sehingga kek masak.</p>
+        </details>
+
+        <details class="recipe">
+            <summary>Brownies</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Coklat</li>
+                <li>Mentega</li>
+                <li>Gula</li>
+                <li>Telur</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Campurkan bahan dan bakar
+            sehingga brownies masak.</p>
+        </details>
+
+        <details class="recipe">
+            <summary>Puding Karamel</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Telur</li>
+                <li>Susu</li>
+                <li>Gula</li>
+                <li>Esen vanila</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Sediakan karamel, campurkan bahan
+            puding dan kukus sehingga masak.</p>
+        </details>
+
+    </section>
+
+
+    <!-- MINUMAN -->
+
+    <section class="category">
+
+        <h2>🥤 Minuman</h2>
+
+        <details class="recipe">
+            <summary>Teh Ais</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Teh</li>
+                <li>Susu pekat</li>
+                <li>Air</li>
+                <li>Ais</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Bancuh teh, masukkan susu
+            dan hidangkan bersama ais.</p>
+        </details>
+
+        <details class="recipe">
+            <summary>Jus Tembikai</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Tembikai</li>
+                <li>Air</li>
+                <li>Ais</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Kisar tembikai bersama air
+            dan hidangkan bersama ais.</p>
+        </details>
+
+    </section>
+
+
+    <!-- RESIPI MUDAH -->
+
+    <section class="category">
+
+        <h2>🍳 Resipi Mudah</h2>
+
+        <details class="recipe">
+            <summary>Sandwich Telur</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Roti</li>
+                <li>Telur rebus</li>
+                <li>Mayonis</li>
+                <li>Garam</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Lenyek telur, campurkan mayonis
+            dan sapukan pada roti.</p>
+        </details>
+
+        <details class="recipe">
+            <summary>Roti Bakar</summary>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>Roti</li>
+                <li>Mentega</li>
+                <li>Jem</li>
+            </ul>
+
+            <h3>Cara penyediaan:</h3>
+            <p>Sapukan mentega dan jem
+            pada roti kemudian bakar.</p>
+        </details>
+
+    </section>
+
+
+    <p id="message" class="empty"></p>
+
+</div>
+
+
+<footer>
+    <p>© 2026 Resipi Kita</p>
+    <p>Selamat Memasak! ❤️</p>
+</footer>
+
+
+<script>
+
+function searchRecipe() {
+
+    var input = document.getElementById("search")
+    .value.toLowerCase().trim();
+
+    var categories = document.getElementsByClassName("category");
+
+    var found = 0;
+
+    for (var i = 0; i < categories.length; i++) {
+
+        var recipes = categories[i]
+        .getElementsByClassName("recipe");
+
+        var categoryFound = 0;
+
+        for (var j = 0; j < recipes.length; j++) {
+
+            var name = recipes[j].innerText.toLowerCase();
+
+            if (name.includes(input)) {
+
+                recipes[j].style.display = "block";
+                categoryFound++;
+                found++;
+
+            } else {
+
+                recipes[j].style.display = "none";
+
+            }
+
+        }
+
+        if (categoryFound > 0) {
+            categories[i].style.display = "block";
+        } else {
+            categories[i].style.display = "none";
+        }
+
+    }
+
+    var message = document.getElementById("message");
+
+    if (input !== "" && found === 0) {
+        message.innerHTML = "Resipi tidak dijumpai!";
+    } else if (input !== "") {
+        message.innerHTML = "Resipi dijumpai!";
+    } else {
+        message.innerHTML = "";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
